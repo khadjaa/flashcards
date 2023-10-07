@@ -1,0 +1,37 @@
+.button {
+  all: unset;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: var(--color-accent-500);
+
+  &:hover {
+    background-color: var(--color-accent-300);
+  }
+
+  &:active {
+    background-color: var(--color-accent-700);
+  }
+
+  &:focus {
+    background-color: var(--color-accent-500);
+  }
+  
+}
+
+.secondary {
+  background-color: green;
+}
+
+.tertiary {
+  background-color: blue;
+}
+
+.link {
+  background-color: yellow;
+}
+
+.fullWidth {
+  width: 100%;
+}
