@@ -4,20 +4,26 @@
 }
 
 .primary {
+  padding: 6px 28px;
   background-color: var(--color-accent-500);
+  border-radius: 4px;
+  box-shadow: 0 4px 18px 0 rgb(140 97 255 / 35%);
 
   &:hover {
     background-color: var(--color-accent-300);
+  }
+
+  &:focus {
+    border: 2px solid var(--info-700, #2f68cc);
   }
 
   &:active {
     background-color: var(--color-accent-700);
   }
 
-  &:focus {
-    background-color: var(--color-accent-500);
+  &:disabled {
+    background-color: var(--color-accent-900);
   }
-  
 }
 
 .secondary {
