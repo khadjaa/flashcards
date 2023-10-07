@@ -1,11 +1,12 @@
+import { LogOutIcon } from '@/assets/icons/Icons.tsx'
 import { Button } from '@/components/ui/button'
 
 export function App() {
   return (
     <div>
-      <Button variant={'secondary'}>Link</Button>
-      <Button variant={'primary'} as={'a'} href={'/link'}>
-        Link with a
+      <Button variant={'primary'}>
+        <LogOutIcon />
+        Primary Button
       </Button>
     </div>
   )
