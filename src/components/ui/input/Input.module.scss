@@ -1,0 +1,109 @@
+input {
+  all: unset;
+
+  width: 284px;
+  height: 36px;
+  padding-left: 20px;
+
+  font-family: Roboto, sans-serif;
+
+  border-radius: 2px;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+.inputBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 284px;
+}
+
+.label {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: var(--dark-100, #808080);
+
+  &:disabled {
+    color: var(--dark-300, #808080);
+  }
+}
+
+.primary {
+  flex-shrink: 0;
+  background: transparent;
+  border: 1px solid var(--dark-300, #4c4c4c);
+
+  &:active {
+    color: var(--color-light-100);
+    border: 1px solid var(--light-100, #fff);
+  }
+
+  &:hover {
+    background: var(--dark-700, #171717);
+  }
+
+  &:focus {
+    // border: 2px solid var(--info-700, #2f68cc);
+    // outline: none;
+  }
+
+  &:disabled {
+    color: var(--dark-300, #808080);
+  }
+}
+
+.error {
+  width: 284px;
+  height: 36px;
+  padding-left: 20px;
+
+  border: 2px solid var(--danger-300, #f23d61);
+  border-radius: 2px;
+  outline: none;
+
+  &::placeholder {
+    color: var(--color-danger-300);
+  }
+
+  &:hover {
+    background: var(--dark-700, #171717);
+  }
+
+  &:focus {
+    border: 2px solid var(--info-700, #2f68cc);
+    outline: none;
+  }
+}
+
+.errorLabel {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  color: var(--danger-300, #f23d61);
+}
+
+.eye {
+  position: absolute;
+  top: 32px;
+  left: 272px;
+
+  width: 20px;
+  height: 20px;
+}
+
+.search {
+  position: absolute;
+  top: 8px;
+  left: 272px;
+
+  width: 20px;
+  height: 20px;
+
+  color: currentcolor;
+
+  &:has(~ .input:focus) {
+    color: var(--color-light-100);
+  }
+}
